@@ -200,6 +200,7 @@ http://192.168.1.100:8080/fisco-bcos-browser
 mkdir /software
 tar -zxvf jdkXXX.tar.gz /software/
 ```
+##需要注意ubuntu系统自带jre,建议不要使用apt instal方式安装java,这样会导致tools.jar缺失，影响gradle运行，推荐使用上述方式安装java
 
 （2）配置环境变量
 
@@ -212,9 +213,9 @@ export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
 ###2、gradle环境部署
 
 此处给出简单步骤，供快速查阅。更详细的步骤，请参考[官网](http://www.gradle.org/downloads)。
-
+需要注意ubuntu系统自带gradle会覆盖安装jre,建议不要使用apt instal方式安装gradle,推荐使用下述述方式安装gradle.
 （1）从[官网](http://www.gradle.org/downloads)下载对应版本的gradle安装包，并解压到相应目录。
-
+    官方下载地址一： https://downloads.gradle.org/distributions/gradle-2.5-all.zip
 ```shell
 mkdir /software/
 unzip -d /software/ gradleXXX.zip
@@ -229,7 +230,7 @@ export PATH=$GRADLE_HOME/bin:$PATH
 
 ### 3、数据库部署
 
-此处以Centos/Fedora为例。
+此处以Centos/Fedora/ubuntu为例。
 
 （1）切换到root
 
