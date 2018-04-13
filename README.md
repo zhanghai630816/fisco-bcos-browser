@@ -309,7 +309,10 @@ http://127.0.0.1:8080/fisco-bcos-browser
 ```shell
 [Fatal Error] spring-core-4.1.8.RELEASE.pom:2:127: XML document structures must start and end within the same entity.
 ```
-
+###tomcat的一些问题：
+ubuntu自行配置jdk及gradle后会遇到tomcat不找到jdk的问题，解决办法是进到tomcat/bin目录，修改setclasspath.bat在其中配置：
+export JAVA_HOME=/jdk所在目录/jdk1.8.0_162      #jdk请参照你的配置
+export JRE_HOME=/jdk所在目录/jdk1.8.0_162/jre 
 
 
 
