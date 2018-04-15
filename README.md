@@ -200,7 +200,8 @@ http://192.168.1.100:8080/fisco-bcos-browser
 mkdir /software
 tar -zxvf jdkXXX.tar.gz /software/
 ```
-
+ubuntu版本可绕过（1）（2）直接使用：apt install gradle ,gradle将自动安装jdk,完成后从本地下载对应版本jdk，取出lib中的dt.jar和tools.jar放入
+jdk路径：/usr/lib/jvm/openjdk路径/jkr/lib/ 中 。放入可以使用mv 或 cp
 （2）配置环境变量
 
 ```shell
